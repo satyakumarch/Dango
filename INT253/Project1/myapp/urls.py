@@ -7,4 +7,5 @@ urlpatterns = [
     path('prime', views.prime),
     path('api-data/<id>', views.get_api_data),
     path('mahesh', views.json_lpu),
+    path('greet/<str:name>/', views.greet, name='greet_user'),
 ]

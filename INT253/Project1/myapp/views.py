@@ -53,3 +53,6 @@ def json_lpu(request):
 #     }
 
 # Create your views here.
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}!")
