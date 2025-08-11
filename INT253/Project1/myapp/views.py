@@ -56,3 +56,8 @@ def json_lpu(request):
 
 def greet(request, name):
     return HttpResponse(f"Hello, {name}!")
+
+
+
+def report(request, date):
+    return HttpResponse(f"Report for date: {date}")
