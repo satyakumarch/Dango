@@ -1,6 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 import requests
 from django.http import JsonResponse
+from django.shortcuts import render
 
 def hello_world(request):
     return HttpResponse("Hello, World!")
@@ -61,3 +63,6 @@ def greet(request, name):
 
 def report(request, date):
     return HttpResponse(f"Report for date: {date}")
+
+def abcd(request):
+    return render(request,'index.html')
