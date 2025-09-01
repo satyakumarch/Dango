@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery - Village Website{% endblock %}
+
+{% block content %}
+<div class="gallery-content">
+    <h1>Village Gallery</h1>
+    <p>Explore the stunning views and moments captured from our beautiful village.</p>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="{% static 'village1.jpg' %}" alt="Village View 1">
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'village3.jpg' %}" alt="Village View 3">
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'village4.jpg' %}" alt="Village View 4">
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'village5.jpg' %}" alt="Village View 5">
+        </div>
+    </div>
+</div>
+{% endblock %}
